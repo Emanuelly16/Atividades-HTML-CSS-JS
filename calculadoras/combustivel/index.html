@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="comb.css">
+    <title>calcule</title>
+</head>
+<body>
+    <h1> Calcule Álcool e gasolina</h1>
+
+    Álcool <br><br>
+    <input type="number" step="0.01"  id="alcool" placeholder="Preço do Álcool"/>
+    <br><br>
+    Gasolina <br><br>
+    <input type="number" step="0.01"  id="gasolina" placeholder="Preço gasolina"/>
+    <br><br>
+    <button onclick="calcular()">Calcular</button><br><br>
+    <br> 
+    <script>
+            function calcular() {
+                const precoAlcool = parseFloat(document.getElementById("alcool").value); 
+                const precoGasolina = parseFloat(document.getElementById("gasolina").value);
+            
+                if(isNaN(precoAlcool)){
+                  alert ("Preço da Ácool inválido")
+                    return;
+                }
+                if(isNaN(precoGasolina)){
+                    alert ("Preço da Gasolina inválido")
+                    return;
+                    }
+
+                
+                if (precoAlcool < precoGasolina) {
+                    alert("Melhor escolher Álcool");
+                } else if (precoAlcool > precoGasolina) {
+                    alert("Melhor escolher Gasolina");
+                } else {
+                    alert("Os preços são iguais");
+                }
+                }
+
+                                             
+    </script>
+  
+</body>
+</html>

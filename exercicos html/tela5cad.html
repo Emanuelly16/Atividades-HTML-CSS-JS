@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teladecadastro</title>
+</head>
+<body>
+    <h1>Tela de cadastro</h1>
+    <form action="telacad.html" method="post">
+        
+        Nome: <input type="text" name="nome" id="nome"><br><br>
+        Email: <input type="email" name="Email" id="Email"><br><br>
+        Senha: <input type="password" name="Senha" id="Senha"><br><br>
+        Data de Nascimento: <input type="date" name="datanasci" id="datanasci"><br><br>
+            
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+        <option value="">Selecione</option>
+        <option value="masculino">Masculino</option>
+        <option value="feminino">Feminino</option>
+        </select><br><br>
+        <label for="opinião">Diga o que podemos melhorar:</label><br>
+                <textarea id="opinião" name="opinião" rows="4" cols ="40">
+                </textarea><br><br>
+
+        <input type="submit" value="Cadastrar">
+    </form>
+    
+</body>
+</html>

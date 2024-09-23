@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="conv.css">
+    <title>Conversão</title>
+</head>
+<body>
+    <h1> Conversão de valores em Reais e Dólares</h1>
+
+    <label for="moeda">Moeda:</label>
+        <select id="moeda" name="Moeda" required>
+            <option value="">Selecione</option>
+            <option value="Dólar">Dólar</option>
+            <option value="Real">Real</option>
+        </select><br><br>
+
+    Valor<br>
+    <input type="number" step="0.01"  id="valor" placeholder="Digite o valor"/>
+    <br><br>
+    Cotação do dólar <br>
+    <input type="number" step="0.01"  id="cotacao" placeholder="Digite a cotação"/>
+    <br><br>
+    <button onclick="Conversao()">Converter</button><br><br>
+    <br> 
+    <script>
+            function Conversao() {
+                
+                const moeda= (document.getElementById("moeda").value); 
+                const valor= parseFloat(document.getElementById("valor").value);
+                const cotacaoDolar = parseFloat(document.getElementById("cotacao").value);
+            
+                if (moeda === "Real") {
+                    const resultado = valor / cotacaoDolar;
+                    alert("O valor em Dólar é "+ resultado.toFixed(2));
+                } else if (moeda === "Dólar") {
+                    const resultado = valor * cotacaoDolar;
+                    alert("O valor em Real é "+ resultado.toFixed(2));
+                }else{
+                    alert("Selecione uma moeda");
+                }
+
+            }                               
+    </script>
+  
+</body>
+</html>

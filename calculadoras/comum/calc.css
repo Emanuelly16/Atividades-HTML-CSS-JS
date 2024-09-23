@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(
+        rgba(25, 0, 25, 0.8),   /* 190019 */
+        rgba(43, 18, 76, 0.8),  /* 2B124C */
+        rgba(82, 43, 91, 0.8),  /* 522B5B */
+        rgba(133, 79, 92, 0.8), /* 854F5C */
+        rgba(223, 182, 178, 0.8),/* DFB6B2 */
+        rgba(251, 228, 216, 0.8) /* FBE4D8 */
+    );
+}
+
+.background {
+    background-color: #ffffff18;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.digito {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    background-color: rgba(137, 43, 226, 0.082);
+    color: #000000;
+    border: 1px solid #dddddda9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.digito:hover {
+    background-color: rgb(55, 3, 58);
+}
+
+#resultado {
+    text-align: right;
+    padding: 30px;
+    margin-bottom: 10px;
+    border: 1px solid #dddddda9;
+    border-radius: 5px;
+    background-color: #f9f9f93a;
+    font-size: 24px;
+    font-weight: bold;
+    
+}

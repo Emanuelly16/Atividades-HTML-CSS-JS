@@ -1,0 +1,47 @@
+input{
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flexbox;
+    width: 30;
+    height: 15;
+    border:solid 1px rgb(255, 255, 255); 
+    text-align: center;
+    background-color: #00000004;
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    
+
+
+    
+}
+input::placeholder{
+    color: #ffffff;
+    font-size: large;
+    text-align: center;
+}
+body {
+    background: linear-gradient(
+        rgba(5, 31, 32, 0.7),  /* #051F20 com transparência */
+        rgba(11, 43, 38, 0.7),  /* #0B2B26 com transparência */
+        hsla(169, 44%, 15%, 0.7),  /* #163832 com transparência */
+        rgba(35, 83, 71, 0.7),  /* #235347 com transparência */
+        rgba(142, 182, 155, 0.7), /* #8EB69B com transparência */
+        rgba(218, 241, 222, 0.7)  /* #DAF1DE com transparência */
+    );
+    height: 100vh; /* Para cobrir toda a altura da tela */
+    margin: 0; /* Remove a margem padrão */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(240, 240, 240); /* Para o texto ser visível sobre o fundo */
+    flex-direction: column;
+}
+
+button{
+    background-color: rgba(7, 46, 36, 0.432);
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    border-radius: 30px;
+    height: 50px;
+    width: 90px;
+    border:solid 1px rgb(250, 247, 247); 
+}
